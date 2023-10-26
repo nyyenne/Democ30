@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DrawerNavigation" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--        <item name="colorPrimary">#FFFFFF</item>-->
+    </style>
+
+    <style name="Theme.DrawerNavigation" parent="Base.Theme.DrawerNavigation" />
+
+    <style name="toolbartext" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="MyToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#FFF</item>
+        <item name="theme">@style/Theme.AppCompat.Light</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/toolbartext</item>
+    </style>
+</resources>

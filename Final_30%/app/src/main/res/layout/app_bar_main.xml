@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--LinearLayout có:
+chiều sắp xếp các view: dọc-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<!--AppBarLayout có:
+chiều rộng: khít parent
+chiều cao: vừa nội dung-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--Toolbar có các thuộc tính
+id: toolbar
+chiều rộng: khít parent
+chiều cao: vừa nội dung
+chiều cao: actionBarSize
+style: @style/MyToolbar
+tiêu đề: "Toolbar"-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            style="@style/MyToolbar"
+            app:title="Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--Include content_main có:
+layout: content_main
+chiều rộng: khít parent
+chiều cao: khít parent-->
+    <include layout="@layout/content_main"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </include>
+
+</LinearLayout>
